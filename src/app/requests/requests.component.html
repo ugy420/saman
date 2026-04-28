@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+    <h1>
+        My Requests
+    </h1>
+    Track and manage your requests
+    <p>
+        Pending: n Approved: n Rejected: n
+    </p>
+    @for (request of requests; track request.id) {
+        <app-request [data]="request"></app-request>
+    }
+    
+</form>
