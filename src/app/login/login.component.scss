@@ -5,7 +5,20 @@ form{
     width: fit-content;
 }
 
+input, button{
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+input{
+    border-width: 1px;
+}
+
+input:focus{
+    outline: none;
+}
+
 button{
-    display: flex;
-    padding: 5px;
+    border-style: none;
+    background-color: #008af1;
 }

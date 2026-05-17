@@ -1,0 +1,16 @@
+<header>
+    <!-- <img src="request.png"> -->
+</header>
+<main>
+    @for(option of options; track option.text){
+        <a [routerLink]="option.link" routerLinkActive="active">
+                <span
+                class="icon"
+                [style.--icon]="'url(' + option.img + ')'"
+                aria-hidden="true"
+                > 
+                </span>
+            {{option.text}}
+        </a>
+    }
+</main>

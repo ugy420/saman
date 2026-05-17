@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.sum-div{
+    margin-block-start: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.search-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;        
+    border-radius: 10px;
+}
+
+.search-div input{
+    display: flex;
+    width: 85%;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.search-div input:focus, select:focus{
+    outline: #008af1 2px;
+    outline-style: solid;
+}
+
+.search-div select{
+    width: 10%;
+    background-color: white;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 1em;
+}

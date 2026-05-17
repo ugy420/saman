@@ -1,13 +1,26 @@
-<form (ngSubmit)="onSubmit()">
-    <h1>
+<div class="container">
+
+    <div>
         My Requests
-    </h1>
+    </div>
     Track and manage your requests
-    <p>
-        Pending: n Approved: n Rejected: n
-    </p>
-    @for (request of requests; track request.id) {
-        <app-request [data]="request"></app-request>
-    }
+    <div class="sum-div">
+        <app-summary title="Total" numb="5"></app-summary>
+        <app-summary title="Pending" numb="3"></app-summary>
+        <app-summary title="Approved" numb="2"></app-summary>
+        <app-summary title="Rejected" numb="1"></app-summary>
+    </div>
     
-</form>
+    <div class="search-div">
+        <input type="text"/>
+    <select>
+        <option>All</option>
+        <option>Approved</option>
+        <option>Rejected</option>
+    </select>
+</div>
+
+@for (request of requests(); track request.id) {
+    <app-request [data]="request"></app-request>
+}
+</div>

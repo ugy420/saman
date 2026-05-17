@@ -1,0 +1,14 @@
+<div>
+    <h1>
+        Recent Requests
+    </h1>
+    @if(requests()===[]){
+        @for(request of requests(); track request.id){
+            <li>
+                {{request.id}}
+            </li>
+        }
+    }@else {
+        No Request atm
+    }
+</div>

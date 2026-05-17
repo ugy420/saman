@@ -1,8 +1,12 @@
 <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <h1>
+        Welcome to Sign In Page
+    </h1>
     <label for="em">Email</label>
     <input type="text" id="em" formControlName="email">
     
     <label for="pw">Password</label>
     <input type="text" id="pw" formControlName="pws">
     <button>Sign In</button>
+    <a>Forgot my password</a>
 </form>

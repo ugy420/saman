@@ -1,0 +1,33 @@
+.container{
+    background-color: white;
+    padding: 1rem;
+}
+
+.status{
+    border: solid 1px lightgray;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.approve{
+    background-color: #E8F5E9; /* gentle green */
+    color: #1B5E20;
+    border-color: #C8E6C9;
+}
+
+.pending{
+background-color: #FFF7E6; /* gentle amber */
+color: #8A5A00;
+border-color: #FFE0B2;
+}
+
+.reject{
+background-color: #FDECEC; /* gentle red */
+color: #8A1F1F;
+border-color: #F5C2C2;
+}
+.items{
+    display: flex;
+    gap: 1rem;
+}

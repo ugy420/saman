@@ -1,6 +1,6 @@
 export interface Requests{
     id: string,
-    userId: string,
-    itemName: string,
-    amount: number,    
+    reqId: string,
+    status: string,        
+    quantity: number,
 }

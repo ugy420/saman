@@ -1,10 +1,19 @@
-<section>
+<div>
     <header>
         <h1>
             Welcome back, John Dorji
         </h1>
-        <p>select items and req</p>
-        <button (click)="onRequest()">Request Item</button>
+        <div>
+            Browse items and request
+        </div>
     </header>
-    
-</section>
+    <main class="grid">
+        <app-summary title="Total" numb="5" img="assignment.svg"></app-summary>
+        <app-summary title="Pending" numb="3" img="history.svg"></app-summary>
+        <app-summary title="Approved" numb="2" img="check_circle_outline.svg"></app-summary>
+        <app-summary title="Rejected" numb="1" img="highlight_off.svg"></app-summary>
+
+        <app-recent-request></app-recent-request>
+        <app-quick-actions></app-quick-actions>
+    </main>
+</div>

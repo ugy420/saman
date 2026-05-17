@@ -1,3 +1,18 @@
-<div>
-    {{data().amount}} {{data().itemName}}s 
+<div class="container">
+    Request #{{ data().id}} <span [class]="{
+        status: true,
+        'approve': data().status === 'APPROVED',
+        'reject': data().status === 'REJECTED',
+        'pending': data().status === 'PENDING'
+        
+        }">{{data().status}}</span>
+    <div>
+        {{data().items.length}} item{{ data().items.length>1 ? 's' : ''}} - {{data().requestedAt}}
+    </div>
+    <div class="items">
+        @for (item of data().items; track $index) {
+            <app-items [itm]="item"></app-items>
+        }
+    </div>
 </div>
+    

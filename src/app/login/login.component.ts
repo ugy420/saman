@@ -11,16 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   router = inject(Router);
 
-  form = new FormGroup({
-    email: new FormControl('',{
-      validators: [Validators.required],
-    }),
-    pws: new FormControl('',{
-      validators: [Validators.required],
-    })
-  });
-  
   onSubmit(){
-    this.router.navigate(['hello'])
+    this.router.navigate(['meeting-view'])
   }
 }
